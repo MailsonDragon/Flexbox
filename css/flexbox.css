@@ -1,0 +1,63 @@
+.cabecalhoPrincipal .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cabecalhoPrincipal-nav{
+    display: flex;
+}
+.conteudoPrincipal-cursos{
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: flex-start;*/
+}
+.conteudoPrincipal-cursos-link{
+    width: 23%;
+    margin: 1%;
+}
+.conteudoPrincipal-cursos-link:nth-child(4n){/*Remove a borda dos elementos multilhos de 4  Ex: 4,8,12,16...*/
+    margin-right: 0;
+}
+.conteudoPrincipal-cursos-link:nth-child(4n+1){/*Remove a borda dos elementos multilhos de 4+1=5º primeiro tambem Ex: 1,5,9,13,17...*/
+    margin-left: 0;
+}
+.videoSobre .container{
+    display: flex;
+}
+.videoSobre-sobre{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+.videoSobre-video{
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+.videoSobre-sobre-list{
+    flex-grow: 1;
+}
+.rodapePrincipal-patrocinadores .container{
+    display: flex;
+    justify-content: space-between;/*Distribui espaço livre da caixa entre os elemetos*/
+}
+.rodapePrincipal-patrocinadores-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;/*Distribui espaço livre da caixa em volta dos elemetos*/
+    width: 70%;
+    margin-right: 5%;
+}
+.rodapePrincipal-contatoForm{
+    width: 25%;
+}
+.rodapePrincipal-contatoForm-fieldset{
+    display: flex;
+}
+.rodapePrincipal-navMap-list{
+    display: flex;
+    /*flex-direction: column;
+    flex-wrap: wrap;*//*Quebra de linha para proxima coluna*/
+    flex-flow: column wrap;
+    height: 255px;
+}
